@@ -10,7 +10,7 @@
 }
 
 #Body {
-  height: 78%;
+  height: 75vh;
   width: 1024px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -126,4 +126,9 @@
 
 .product-avatar {
   width: 24px;
+}
+
+.product-link {
+  color: inherit;
+  text-decoration: none;
 }

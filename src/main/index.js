@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function MainPage() {
   const [products, setProducts] = React.useState([]);
@@ -38,28 +39,31 @@ function MainPage() {
         <h1>메뉴</h1>
         <div id="product-list">
           {products.map(function (product, index) {
+            console.log("맵 : ", product);
             return (
               <div className="product-card">
-                <div className="product-image-frame">
-                  <img
-                    className="product-image"
-                    src={product.imageUrl}
-                    alt={product.name}
-                  />
-                </div>
-                <div className="product-content">
-                  <span className="product-name">{product.name}</span>
-                  <span className="product-price">{product.price}원</span>
-                  <div className="product-seller">
+                <Link className="product-link" to={`/product/${index}`}>
+                  <div className="product-image-frame">
                     <img
-                      className="product-avatar"
-                      //   이 부분도 경로 받아올 수 있게 해야함
-                      src="./images/icons/cooker.png"
-                      alt="요리사"
+                      className="product-image"
+                      src={product.imageUrl}
+                      alt={product.name}
                     />
-                    <span>{product.seller}</span>
                   </div>
-                </div>
+                  <div className="product-content">
+                    <span className="product-name">{product.name}</span>
+                    <span className="product-price">{product.price}원</span>
+                    <div className="product-seller">
+                      <img
+                        className="product-avatar"
+                        //   이 부분도 경로 받아올 수 있게 해야함
+                        src="./images/icons/cooker.png"
+                        alt="요리사"
+                      />
+                      <span>{product.seller}</span>
+                    </div>
+                  </div>
+                </Link>
               </div>
             );
           })}
