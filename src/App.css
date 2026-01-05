@@ -4,3 +4,73 @@ body,
 #root > div {
   height: 100%;
 }
+
+#Header {
+  height: 100px;
+  border-bottom: 1px solid gray;
+}
+
+#Body {
+  height: 75vh;
+  width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#Footer {
+  height: 150px;
+  background-color: rgb(230, 230, 230);
+}
+
+#banner {
+  height: 150px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-area {
+  width: 1024px;
+  height: 100%;
+  /* 부모에서
+  display: flex;
+  justify-content: center;
+  로 해도 아래 마진이랑 동일한 효과 */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#header_logo {
+  height: 80px;
+  width: 190px;
+  flex-grow: 0;
+}
+
+#header-area > h1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#login_menu {
+  height: 80px;
+  width: 190px;
+  display: flex;
+  align-items: end;
+  flex-grow: 0;
+  color: blue;
+  font-weight: 500;
+}
+
+#banner > h1 {
+  color: blue;
+  font-size: 24px;
+}
+
+#Body > h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
