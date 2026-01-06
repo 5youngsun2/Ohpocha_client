@@ -1,0 +1,60 @@
+#login_area {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#login_box {
+  height: 300px;
+  width: 400px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login_box > h1 {
+  height: 40px;
+  width: 100%;
+  margin: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#idbox {
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+#passwordbox {
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+#login_action {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#submit {
+  height: 30px;
+  width: 80px;
+  background-color: #ddddff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#cancel {
+  height: 30px;
+  width: 80px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  overflow: hidden;
+}

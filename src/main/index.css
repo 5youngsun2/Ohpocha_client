@@ -1,9 +1,4 @@
 /* 모든 테그에 대해서 마진과 패딩을 없애겠다. */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #product-list {
   display: flex;
   flex-wrap: wrap;
